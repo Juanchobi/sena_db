@@ -1,0 +1,131 @@
+/* --- Estilos Generales --- */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.8;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f2f5;
+    /* Color de fondo  */
+    color: #333;
+}
+
+
+/*  Estilos del Encabezado */
+
+header {
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    /* Degradado */
+    color: #ffffff;
+    padding: 3rem text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+header p {
+    margin: 10px 0 0;
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+
+/*  Estilos de la Navegación (Lista Ordenada) */
+
+nav {
+    background: #fff;
+    padding: 1.5rem;
+    margin: 30px auto;
+    width: 85%;
+    max-width: 900px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+nav h2 {
+    color: #1e3c72;
+    margin-top: 0;
+}
+
+nav ol {
+    margin-bottom: 0;
+    padding-left: 20px;
+}
+
+nav ol li {
+    margin-bottom: 12px;
+    font-size: 1.1rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: #3498db;
+    font-weight: bold;
+    transition: color 0.3s;
+    /* Efecto suave al pasar el mouse */
+}
+
+nav a:hover {
+    color: #1e3c72;
+    /* Cambia de color al pasar el mouse */
+}
+
+
+/* Estilos del Contenido Principal y Secciones */
+
+main {
+    padding-bottom: 40px;
+}
+
+section {
+    width: 85%;
+    max-width: 900px;
+    margin: 30px auto;
+    background: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    border-left: 6px solid #1e3c72;
+    /* Borde lateral distintivo */
+    transition: transform 0.3s;
+    /* Efecto de elevación */
+}
+
+section:hover {
+    transform: translateY(-5px);
+    /* al pasar el mouse */
+}
+
+section h2 {
+    color: #1e3c72;
+    margin-top: 0;
+    border-bottom: 2px solid #f0f2f5;
+    padding-bottom: 10px;
+}
+
+
+/* Estilos de las Imágenes */
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin: 20px auto;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Estilos del Pie de Página */
+
+footer {
+    background: #2c3e50;
+    color: #bdc3c7;
+    text-align: center;
+    padding: 25px;
+    font-size: 0.95rem;
+    margin-top: auto;
+}
