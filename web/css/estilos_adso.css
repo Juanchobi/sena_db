@@ -1,0 +1,39 @@
+/* --- LOGO SENA: ROTACIÓN 3D (Efecto Moneda) --- */
+.sena-logo-container {
+    perspective: 1000px; /* Necesario para que el giro se vea con profundidad */
+    z-index: 999;
+}
+
+.sena-logo {
+    width: 65px;
+    height: auto;
+    display: block;
+    /* Animación: nombre | duración | velocidad constante | infinito */
+    animation: rotacion3D 6s linear infinite;
+    filter: drop-shadow(0 0 8px rgba(255,255,255,0.4));
+    transform-style: preserve-3d;
+}
+
+/* Configuración específica cuando está en el HEADER (Dashboard/Portal) */
+.header .sena-logo-container {
+    position: absolute;
+    top: 15px;
+    right: 25px;
+}
+
+/* Configuración específica cuando está en el LOGIN-CARD */
+.login-card .sena-logo { 
+    width: 100px; /* Más grande en el login */
+    margin: 0 auto 20px auto;
+    animation: rotacion3D 5s linear infinite; /* Un poco más rápido en el login */
+}
+
+/* Definición de la Animación */
+@keyframes rotacion3D {
+    0% {
+        transform: rotateY(0deg);
+    }
+    100% {
+        transform: rotateY(360deg);
+    }
+}
